@@ -1,12 +1,13 @@
 /**
 Complete the function evenOrOdd such that it returns the string "even" when the number parameter it receives is even and "odd" otherwise.
  */
-
+// This needs check from Margit github
 function evenOrOdd(number) {
-    if (number % 2 === 0){
-        return 'even';
-    } else {
-    return 'odd';
+    if (number % 2 !== 0){
+        return 'odd';
+    } 
+    if (number % 2 === 0) {
+    return 'even';
     }
 }
 

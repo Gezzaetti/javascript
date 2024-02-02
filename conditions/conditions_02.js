@@ -9,6 +9,14 @@ function getTemperature(temperature){
     return "it is normal, don't wear jacket";
 }
 }
+//#Correction function getTemprature(temp) {
+//  if(temp < 15){
+//  console.log("They should wear jacket ");
+// } else {
+// console.log ('You're good to go. ');
+//}
+///}
+//Prompt always return string. 
 
 console.log(getTemperature(23));
 console.log(getTemperature(-12));
