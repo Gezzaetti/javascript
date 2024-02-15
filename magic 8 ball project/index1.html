@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Magic 8-Ball</title>
+  </head>
+  <body>
+    <h1>Magic 8-Ball</h1>
+    <label for="question">Ask your question:</label>
+    <input type="text" id="question" />
+    <button onclick="askQuestion()"="button" style="vertical-align:middle"><span>Ask </span></button>
+    
+    <script>
+      
+      const answers = [
+        "It is desperate move at this point",
+        "It is questionable.",
+        "Without a doubt",
+        "Yes, definitely",
+        "Some sensible minds would talk you out of it.",
+        "Would say they're pipe dreams!",
+        "Most likely",
+        "Taking it suspiciously at face value but sounds good",
+        "Yes",
+      ];
+
+      
+      function getRandomAnswer() {
+        const randomIndex = Math.floor(Math.random() * answers.length);
+        return answers[randomIndex];
+      }
+
+      function askQuestion() {
+        const questionInput = document.getElementById("question");
+        const question = questionInput.value;
+        if (question.trim() === "") {
+          alert("Please enter a question.");
+          return;
+        }
+
+        const answer = getRandomAnswer();
+        alert("Question: " + question + "\nAnswer: " + answer);
+
+    
+        questionInput.value = "";
+      }
+    </script>
+  </body>
+</html>

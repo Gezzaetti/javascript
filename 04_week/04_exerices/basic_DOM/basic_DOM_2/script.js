@@ -10,3 +10,30 @@ When the button is clicked, the function should:
 Ensure the input field is cleared after adding the fruit to the list.
 
 */
+
+const button = document.querySelector("#addFruitBtn");
+
+/*const addDetails = () => {
+  alert("it works!");
+};*/
+const addDetails = () => {
+    const fruitInput = document.querySelector('#fruitInput').value.trim();
+    const fruitList = document.querySelector('#fruitList');
+
+    const newLi = document.createElement('Li');
+    newLi.textContent = fruitInput;
+    fruitList.appendChild(newLi);
+    fruitInput.value = '';
+} else {
+    alerrt ('Please enter a fruit name');
+
+
+};
+
+button.addEventListener('click', addDetails);
+  const addDetails = () => {
+    alert("it works!");
+  };
+
+
+button.addEventListener("click", addDetails);
