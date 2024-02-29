@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_functions</title>
+    <p id="demo"></p>
+</head>
+<!--<script>
+    function myFunction(val){
+        document.getElementById("demo").innerHTML = val * val
+    }
+    myFunction(6)
+</script>
+<!--<script>
+    let x = function(){
+        alert("Good Morning!!! ")
+    }
+    let y = x
+    document.getElementById('demo').innerHTML = x()
+    //function as expression
+</script> -->
+
+<script>
+    var add = new function("a" , "b" , "return a + b");
+    var x = add(2, 3)
+    document.getElementById("demo").innerHTML = x
+
+</script>
+
+<body>
+    
+</body>
+</html>
