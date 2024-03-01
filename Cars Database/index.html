@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>cars demo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cars Database</h1>
+      <form>
+        <label for="search_license">license</label>
+        <input type="text" id="search_license" />
+        <input type="button" value="Search" />
+      </form>
+      <div></div>
+    </header>
+    <main>
+      <h2>Insert car data</h2>
+      <form id="addCar">
+        <div class="form_group">
+          <label for="license">License</label>
+          <input type="text" id="license" />
+        </div>
+        <div class="maker">
+          <label for="maker">Maker</label>
+          <input type="text" id="maker" />
+        </div>
+
+        <div class="form_group">
+          <label for="model">Model</label>
+          <input type="text" id="model" />
+        </div>
+        <div class="form_group">
+          <label for="model">Owner</label>
+          <input type="text" id="owner" />
+        </div>
+        <div class="form_group">
+          <label for="">Price</label>
+          <input type="text" id="price" />
+        </div>
+        <div class="form_group">
+          <label for="color">Color</label>
+          <input type="color" id="color" />
+        </div>
+        <button type="submit">Add car</button>
+        <button type="reset">Reset form</button>
+      </form>
+      <table id="carsTable">
+        <tr>
+          <thead>
+            License
+          </thead>
+          <thead>
+            Maker
+          </thead>
+          <thead>
+            model
+          </thead>
+          <thead>
+            Owner
+          </thead>
+          <thead>
+            Price
+          </thead>
+          <thead>
+            Color
+          </thead>
+        </tr>
+      </table>
+    </main>
+    <footer>&copy copy right | REACT24K, Elias Hagos</footer>
+    <script src="main.js"></script>
+  </body>
+</html>
