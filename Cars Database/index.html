@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <title>cars demo</title>
   </head>
@@ -10,11 +11,11 @@
     <header>
       <h1>Cars Database</h1>
       <form>
-        <label for="search_license">license</label>
-        <input type="text" id="search_license" />
-        <input type="button" value="Search" />
+        <label for="search">license</label>
+        <input type="text" id="search" />
+        <button type="submit"> Search car</button>
       </form>
-      <div></div>
+      <div p id="searchResult"></div>
     </header>
     <main>
       <h2>Insert car data</h2>
@@ -23,7 +24,7 @@
           <label for="license">License</label>
           <input type="text" id="license" />
         </div>
-        <div class="maker">
+        <div class="form_group">
           <label for="maker">Maker</label>
           <input type="text" id="maker" />
         </div>
@@ -49,24 +50,24 @@
       </form>
       <table id="carsTable">
         <tr>
-          <thead>
+          <th>
             License
-          </thead>
-          <thead>
+          </th>
+          <th>
             Maker
-          </thead>
-          <thead>
+          </th>
+          <th>
             model
-          </thead>
-          <thead>
+          </th>
+          <th>
             Owner
-          </thead>
-          <thead>
+          </th>
+          <th>
             Price
-          </thead>
-          <thead>
+          </th>
+          <th>
             Color
-          </thead>
+          </th>
         </tr>
       </table>
     </main>
