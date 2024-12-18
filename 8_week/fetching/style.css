@@ -1,12 +1,13 @@
 body {
     background-color: salmon;
     color: white;
-    font-family: lato; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 
 #blogContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 1 rem;
 }
 
 #blogContainer div {
