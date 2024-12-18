@@ -1,5 +1,5 @@
  const fetchData = () => {
-  fetch("https://jsonplaceholder.typicode.com/todos")
+  fetch("https://jsonplaceholder.typicode.com/users")
     .then((response) => response.json())
     .then((json) => displayData(json));
 };
@@ -23,7 +23,7 @@ const displayData = (data) => {
     data.forEach((post) => {
         const postElement = document.createElement('div');
         postElement.innerHTML = `
-<h2>${post.name}</h2>
+<h2>${post.users}</h2>
 <p>${post.body}</p>
 `;
 container.appendChild(postElement);
